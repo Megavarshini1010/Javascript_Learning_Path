@@ -29,5 +29,27 @@ console.log(na);
 //let and const = to respect block scope
 //var = function scope
 
+function outer(){
+if(true){
+    var varval="Hii this is mega";
+  
+}
+  console.log(varval);
+}
+
+//let is an block scope
+//let and const only access within the scope..like which block contains your variable within the block only access the variable 
+function inner(){
+if(true){
+
+    let value1="i am block scope";
+    
+}
+console.log(value1);
+
+}
+inner();
+
+
 
 
