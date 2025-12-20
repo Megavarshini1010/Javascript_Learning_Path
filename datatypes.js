@@ -6,6 +6,7 @@ Topic covers:Js Data types
 - typeof operator
 - type coercion
 - implict vs explicit 
+- ways of finding  variable type
 */
 //================================
 // 1. Primitive Data Types
@@ -92,7 +93,43 @@ console.log(String(100));
 
 // Number Conversion
 console.log(Number("50"));
-
 // Boolean Conversion
 console.log(Boolean(1));
 console.log(Boolean(0));
+
+//================================
+// ways of finding variable type
+//================================
+/*
+method 1: typeof
+- best for primitive
+- weak for objects
+method 2 - instanceof
+- check whether an object belongs to a specific constructor
+- Fails in cross-window / iframe issue
+method 3 - built-in function
+-Array	Array.isArray()
+-NaN	Number.isNaN()
+-Integer	Number.isInteger()
+-Finite	Number.isFinite()
+method 4 -internal method
+- works for all types
+- checks the internal [[Class]] slot
+- making it the most reliable way to detect data types in JavaScript.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
