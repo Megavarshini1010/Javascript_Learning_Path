@@ -1,2 +1,2 @@
 # Javascript_Learning_Path
-Daily practice questions in Javascript
+This repository contains a JavaScript learning path from scratch to advanced level, serving as a beginner’s guide.
