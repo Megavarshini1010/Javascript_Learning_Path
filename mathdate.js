@@ -4,7 +4,7 @@
  -Rounding Methods
  -Date Object
  -Date Formatting
- -Time calculations
+ -Get & Set Methods
 */
 //======================
 //Math Object
@@ -65,6 +65,7 @@ console.log(date);
 console.log(n.toDateString()); //Wed Jan 15 2025
 console.log(n.toLocaleDateString()); //15/1/2025
 console.log(n.toISOString()); //2025-01-14T18:30:00.000Z
+
 
 
 
