@@ -1,3 +1,10 @@
+/*TOPIC COVERED - DESTRUCTURING IN JS
+1.Array destructuring
+2.Object destructuring
+3.function return,renaming,default values in destructuring
+4.rest parameter in array destructuring
+5.rest parameter in object destructuring
+*/
 //====================
 //Array destucturing
 //====================
@@ -86,4 +93,5 @@ const [first, second, ...rest] = numbers;
 console.log(first);  // 1
 console.log(second); // 2
 console.log(rest);   // [3, 4]
+
 
