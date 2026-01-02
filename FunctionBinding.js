@@ -1,4 +1,8 @@
-//======================
+/*TOPIC COVERED - FUNCTION BINDING
+1.Implicit binding
+2.Explicit Binding
+3.call,apply,bind
+*///======================
 // Implicit binding - Refers only that particular object
 //======================
 let employee ={
@@ -89,4 +93,5 @@ newFunc();
 // //apply - must the f()  argument  pass within the array 
 // employee.intro.apply(person,[102,78]); 
 // let bin = employee.intro.bind(person,str,[102,78]); //must return something 
+
 // console.log(bin());
