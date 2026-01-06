@@ -40,7 +40,42 @@ async function fetchUser() {
     console.log("Error:", error.message);
   }
 }
+//============================
+//AbortController
+//============================
+async function fetchUserData() {
+  const controller = new AbortController();
+  const signal = controller.signal;
+
+  // cancel request after 3 seconds
+  const timeoutId = setTimeout(() => {
+    controller.abort();
+  }, 3000);
+try {
+    const response = await fetch(
+      "https://fakestoreapi.com/users/1",
+      { signal }
+    );
+if (!response.ok) {
+      throw new Error("Failed to fetch data");
+    }
+    const data = await response.json();
+    console.log("User Data:", data);
+  } catch (error) {
+    if (error.name === "AbortError") {
+      console.log("Fetch request was aborted (timeout)");
+    } else {
+      console.log("Error:", error.message);
+    }
+  } finally {
+    clearTimeout(timeoutId); // cleanup
+  }
+}
+// function call
+fetchUserData();
+
 
 // function call
 fetchUser();
+
 
