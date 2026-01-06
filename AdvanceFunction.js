@@ -1,3 +1,10 @@
+/*TOPIC COVERED 
+- aysnc function 
+- async generator function
+- function constructor
+- scope chain
+- Recursive function
+*/
 //========================
 //Async Function
 //========================
@@ -60,3 +67,4 @@ function outer() {
   inner();
 }
 outer();
+
